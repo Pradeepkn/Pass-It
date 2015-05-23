@@ -4,6 +4,26 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-TTPLAPIManager-TTPLAPIManager.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Pods-TTPLAPIManager.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-XMLDictionary.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Pods-YALSideMenu.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,12 +37,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>17A1E02E39226E064D32670C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>204F44AF2C4261B7C4CE5BA6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8EA46AF767E62B13F55584B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3B417DE3A11CC1845340B1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA4EF34E84617743879E29A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D7028839873D6C6DC20ADB42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E57FD671E43731F517C849AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1E245A21A3E433FFAF28157</key>
 		<dict>
 			<key>primary</key>
 			<true/>

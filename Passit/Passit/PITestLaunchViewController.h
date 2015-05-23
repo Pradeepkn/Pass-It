@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestModel.h"
 
 @interface PITestLaunchViewController : UIViewController
+
+@property (nonatomic, strong) TestModel *model;
 
 @end

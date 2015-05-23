@@ -7,21 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SideMenu/SideMenu-Swift.h>
-
-@class PILaunchViewController;
-
-@protocol MenuViewControllerDelegate <NSObject>
-
-- (void)menu:(PILaunchViewController*)menu didSelectItemAtIndex:(NSInteger)index atPoint:(CGPoint)point;
-
-- (void)menuDidCancel:(PILaunchViewController*)menu;
-
-@end
-
 
 @interface PILaunchViewController : UITableViewController
-
-@property (nonatomic, weak) id<MenuViewControllerDelegate> delegate;
 
 @end

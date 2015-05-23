@@ -7,10 +7,13 @@
 //
 
 #import "PILaunchViewController.h"
+#import "TestModel.h"
+#import "PITestListCell.h"
+#import "PITestLaunchViewController.h"
 
 @interface PILaunchViewController ()
 // To hold the reference of the companies and the tests
-@property (nonatomic, strong) NSMutableArray *_companyList;
+@property (nonatomic, strong) NSMutableArray *companyList;
 
 @end
 
@@ -24,6 +27,24 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    _companyList = [NSMutableArray new];
+    
+    {
+        TestModel *model = [[TestModel alloc]initWithCompanyID:@1 companyName:@"ThoughtWorks" testDescription:@"Hackathon pre screening for mobile devs"];
+        [_companyList addObject:model];
+    }
+    
+    {
+        TestModel *model = [[TestModel alloc]initWithCompanyID:@2 companyName:@"Amazon" testDescription:@"Amazon pre screening for SSE"];
+        [_companyList addObject:model];
+    }
+    
+    {
+        TestModel *model = [[TestModel alloc]initWithCompanyID:@3 companyName:@"Snapdeal" testDescription:@"ObjectiveC, Swift"];
+        [_companyList addObject:model];
+    }
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,18 +63,28 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     // Return the number of rows in the section.
-    return 0;
+    return _companyList.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    PITestListCell *cell           = [tableView dequeueReusableCellWithIdentifier:@"PITestListCell" forIndexPath:indexPath];
+    TestModel *model               = _companyList[indexPath.row];
+    cell.companyNameLabel.text     = model.companyName;
+    cell.testDescriptionLabel.text = model.testDescription;
     return cell;
 }
-*/
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    TestModel *model = _companyList[indexPath.row];
+    UIStoryboard *testStoryboard = [UIStoryboard storyboardWithName:@"QAStoryboard" bundle:[NSBundle mainBundle]];
+    PITestLaunchViewController *testLaunchVC = [testStoryboard instantiateViewControllerWithIdentifier:@"PITestLaunchViewController"];
+    testLaunchVC.model = model;
+    [self.navigationController pushViewController:testLaunchVC animated:YES];
+    
+    
+}
 
 /*
 // Override to support conditional editing of the table view.

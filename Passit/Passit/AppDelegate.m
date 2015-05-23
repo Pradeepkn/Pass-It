@@ -14,7 +14,7 @@
 @interface AppDelegate () <PILoginDelegate>
 {
     PILoginViewController *_loginVC;
-    PILaunchViewController *_launchVC;
+    UITabBarController *_launchVC;
 }
 
 @end
@@ -24,11 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    [self showInitialScreen];
-
-    UIStoryboard *chatStoryboard = [UIStoryboard storyboardWithName:@"QAStoryboard" bundle:nil];
-    PITestLaunchViewController *testLaunchViewController = (PITestLaunchViewController*)[chatStoryboard instantiateInitialViewController];
-    self.window.rootViewController = testLaunchViewController;
+    [self showInitialScreen];
     return YES;
 }
 
@@ -71,9 +67,9 @@
     if (_loginVC == nil) {
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:StoryboardNameMain bundle:[NSBundle mainBundle]];
         _loginVC = [mainStoryboard instantiateViewControllerWithIdentifier:StoryboardIDLoginVC];
+        _loginVC.delegate = self;
     }
     self.window.rootViewController = _loginVC;
-    
 }
 
 - (void)showLaunchScreen {
@@ -81,12 +77,13 @@
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:StoryboardNameMain bundle:[NSBundle mainBundle]];
         _launchVC = [mainStoryboard instantiateViewControllerWithIdentifier:StoryboardIDLaunchVC];
     }
+    self.window.rootViewController = _launchVC;
 }
 
 #pragma mark - login delegate -
 
 - (void)loginDidSuccess {
-    
+    [self showLaunchScreen];
 }
 
 @end

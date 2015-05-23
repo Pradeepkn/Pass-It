@@ -13,7 +13,7 @@
 
 #define kIsUserLoggedIn @"isUserLoggedIn"
 
-static const NSString *PIIsUserLoggedIn = @"isUserLoggedIn";
+static NSString *PIIsUserLoggedIn = @"isUserLoggedIn";
 
 // Storyboard Identifiers
 static NSString *StoryboardNameMain     = @"Main";
