@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dtF-D5-PyE">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -200,14 +201,20 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8WV-tW-leL">
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8WV-tW-leL">
                                                     <rect key="frame" x="543" y="34" width="51" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="31" id="U8N-lK-og0"/>
+                                                        <constraint firstAttribute="width" constant="49" id="vgO-Bo-WpN"/>
+                                                    </constraints>
                                                 </switch>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="L6o-2V-nhR" secondAttribute="bottom" constant="11" id="KyI-nL-oiW"/>
                                                 <constraint firstItem="L6o-2V-nhR" firstAttribute="top" secondItem="puU-NQ-QTy" secondAttribute="top" constant="11" id="abD-3m-qRR"/>
+                                                <constraint firstItem="8WV-tW-leL" firstAttribute="trailing" secondItem="puU-NQ-QTy" secondAttribute="trailingMargin" id="fUa-q9-uJe"/>
                                                 <constraint firstItem="L6o-2V-nhR" firstAttribute="leading" secondItem="puU-NQ-QTy" secondAttribute="leading" constant="8" id="irx-aT-Lud"/>
+                                                <constraint firstItem="8WV-tW-leL" firstAttribute="top" secondItem="puU-NQ-QTy" secondAttribute="topMargin" constant="26" id="mla-pc-V6X"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -218,7 +225,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="su7-nK-laS">
                                                     <rect key="frame" x="8" y="7" width="584" height="90"/>
-                                                    <color key="backgroundColor" red="0.25098040699958801" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.34624893478900715" green="0.70126269300488486" blue="0.89080255681818188" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="Logout">
                                                         <color key="titleColor" white="0.95823223570000005" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

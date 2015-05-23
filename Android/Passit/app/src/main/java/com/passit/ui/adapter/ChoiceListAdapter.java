@@ -66,6 +66,9 @@ public class ChoiceListAdapter extends RecyclerView.Adapter<ChoiceListAdapter.Vi
         if (mSelected == position) {
             holder.parentView.setBackgroundColor(
                     PassitApplication.getApplication().getResources().getColor(R.color.accent));
+        } else {
+            holder.parentView.setBackgroundColor(
+                    PassitApplication.getApplication().getResources().getColor(android.R.color.white));
         }
 
         holder.choice.setText(value);
