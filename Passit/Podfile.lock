@@ -1,0 +1,10 @@
+PODS:
+  - YALSideMenu (1.0)
+
+DEPENDENCIES:
+  - YALSideMenu
+
+SPEC CHECKSUMS:
+  YALSideMenu: 87fd2d758bf0afefd034d7d1b7c87af7005a59ee
+
+COCOAPODS: 0.37.1
