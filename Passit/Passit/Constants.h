@@ -9,10 +9,15 @@
 #ifndef Passit_Constants_h
 #define Passit_Constants_h
 
-/// NSUserdefaults keys
+// NSUserdefaults keys
 
 #define kIsUserLoggedIn @"isUserLoggedIn"
 
 static const NSString *PIIsUserLoggedIn = @"isUserLoggedIn";
+
+// Storyboard Identifiers
+
+static const NSString *StoryboardIDLoginVC = @"LoginViewController";
+static const NSString *StoryboardIDLaunchVC = @"LaunchViewController";
 
 #endif

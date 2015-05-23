@@ -55,7 +55,7 @@
     BOOL isLoggedIn = [[NSUserDefaults standardUserDefaults]boolForKey:kIsUserLoggedIn];
     
     if (isLoggedIn) {
-        launchViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@""];
+        launchViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
     }
     else {
         launchViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@""];
