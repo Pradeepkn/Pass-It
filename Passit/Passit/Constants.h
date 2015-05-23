@@ -16,8 +16,8 @@
 static const NSString *PIIsUserLoggedIn = @"isUserLoggedIn";
 
 // Storyboard Identifiers
-
-static const NSString *StoryboardIDLoginVC = @"LoginViewController";
-static const NSString *StoryboardIDLaunchVC = @"LaunchViewController";
+static NSString *StoryboardNameMain     = @"Main";
+static NSString *StoryboardIDLoginVC    = @"LoginViewController";
+static NSString *StoryboardIDLaunchVC   = @"LaunchViewController";
 
 #endif

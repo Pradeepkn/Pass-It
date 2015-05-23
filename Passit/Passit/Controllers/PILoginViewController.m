@@ -8,7 +8,13 @@
 
 #import "PILoginViewController.h"
 
+static  NSString* dummyusername = @"appsoldier";
+static  NSString* dummypassword = @"qwerty";
+
 @interface PILoginViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @end
 
@@ -22,6 +28,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)didPressLoginButton:(id)sender {
+//    if ([self.usernameTextField.text isEqualToString:dummyusername] &&
+//        [self.passwordTextField.text isEqualToString:dummypassword]) {
+        if ([self.delegate respondsToSelector:@selector(loginDidSuccess)]) {
+            [self.delegate loginDidSuccess];
+        }
+//    }
 }
 
 /*

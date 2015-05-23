@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5XU-bE-SYL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
@@ -302,10 +302,10 @@
             </objects>
             <point key="canvasLocation" x="-87" y="-1396"/>
         </scene>
-        <!--View Controller-->
+        <!--Launch View Controller-->
         <scene sceneID="xIV-5p-Cjn">
             <objects>
-                <viewController storyboardIdentifier="LaunchRootViewController" id="5XU-bE-SYL" customClass="ViewController" customModule="Passit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchViewController" id="5XU-bE-SYL" customClass="PILaunchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h6O-se-dFS"/>
                         <viewControllerLayoutGuide type="bottom" id="pkG-vq-jsW"/>
@@ -420,6 +420,9 @@
                                     <color key="titleColor" red="0.72019018310000005" green="0.061214230539999998" blue="0.31410165600000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressLoginButton:" destination="dtF-D5-PyE" eventType="touchUpInside" id="gEA-CG-2JU"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mobile number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-ho-HXm">
                                 <rect key="frame" x="185" y="127" width="230" height="30"/>
@@ -446,6 +449,10 @@
                             <constraint firstItem="92D-LK-7tX" firstAttribute="top" secondItem="tjn-ho-HXm" secondAttribute="bottom" constant="20" id="yCG-di-9rm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="92D-LK-7tX" id="nBr-h4-zdH"/>
+                        <outlet property="usernameTextField" destination="tjn-ho-HXm" id="UQb-Nv-mMU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6N-Sp-4da" sceneMemberID="firstResponder"/>
             </objects>

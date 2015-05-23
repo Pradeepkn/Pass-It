@@ -8,23 +8,33 @@
 
 #import "PIBaseViewController.h"
 
+@protocol PILoginDelegate <NSObject>
+
 /*!
- @abstract <#Summary#>
- 
- @discussion <#Method description#>
- 
- @param <#param#> <#description#>
- 
- @return <#description#>
- 
- @exception <#NSException#> <#description#>
- 
- @warning <#Warning message#>
- 
- @bug <#Description#>
+ @abstract To let the delegate know that login is succeeded
  
  @since 1.0
  */
+- (void)loginDidSuccess;
+
+@end
+
+/*!
+ @discussion To handle login logic
+ 
+ ## Version information
+ 
+ __Version__: 1.0
+ 
+ __Found__: 5/23/15.
+ 
+ __Last update__: 5/23/15.
+ 
+ __Developer__: Selvin, Tarento Technologies Pvt Ltd.
+ 
+ */
 @interface PILoginViewController : PIBaseViewController
+
+@property (nonatomic, weak) id<PILoginDelegate> delegate;
 
 @end

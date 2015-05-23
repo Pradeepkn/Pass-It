@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "PILoginViewController.h"
+#import "PILaunchViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <PILoginDelegate>
+{
+    PILoginViewController *_loginVC;
+    PILaunchViewController *_launchVC;
+}
 
 @end
 
@@ -17,9 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-
-    
+    [self showInitialScreen];
     return YES;
 }
 
@@ -48,20 +52,36 @@
 
 #pragma mark - Launch appropriate UI -
 
-- (void)launchScreen {
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    UIViewController *launchViewController = nil;
-    
+- (void)showInitialScreen {
     BOOL isLoggedIn = [[NSUserDefaults standardUserDefaults]boolForKey:kIsUserLoggedIn];
-    
     if (isLoggedIn) {
-        launchViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+        [self showLaunchScreen];
     }
     else {
-        launchViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@""];
+        [self showLoginScreen];
     }
+}
+
+- (void)showLoginScreen {
+    if (_loginVC == nil) {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:StoryboardNameMain bundle:[NSBundle mainBundle]];
+        _loginVC = [mainStoryboard instantiateViewControllerWithIdentifier:StoryboardIDLoginVC];
+    }
+    self.window.rootViewController = _loginVC;
     
-    self.window.rootViewController = launchViewController;
+}
+
+- (void)showLaunchScreen {
+    if (_launchVC == nil) {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:StoryboardNameMain bundle:[NSBundle mainBundle]];
+        _launchVC = [mainStoryboard instantiateViewControllerWithIdentifier:StoryboardIDLaunchVC];
+    }
+}
+
+#pragma mark - login delegate -
+
+- (void)loginDidSuccess {
+    
 }
 
 @end
