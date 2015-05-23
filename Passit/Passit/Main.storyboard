@@ -98,7 +98,7 @@
                         <segue destination="brQ-Rh-PYA" kind="relationship" relationship="viewControllers" id="O4o-D1-bf9"/>
                         <segue destination="nuf-p1-Llz" kind="relationship" relationship="viewControllers" id="1n5-pz-EI2"/>
                         <segue destination="3nP-m4-fOR" kind="relationship" relationship="viewControllers" id="i23-Ur-0KQ"/>
-                        <segue destination="2nc-2Q-4Zt" kind="relationship" relationship="viewControllers" id="CaV-Rt-HQb"/>
+                        <segue destination="uhn-4V-WVI" kind="relationship" relationship="viewControllers" id="CaV-Rt-HQb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7w-ch-N3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,7 +255,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CD5-Ub-5cT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="-676"/>
+            <point key="canvasLocation" x="1506" y="-676"/>
         </scene>
         <!--FAQs-->
         <scene sceneID="egr-EK-vf6">
@@ -270,207 +270,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L72-O1-jvT">
-                                <rect key="frame" x="0.0" y="72" width="600" height="508"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="467"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">General
-1. Why a residential school?
+                                <mutableString key="text">1. Tell me something about your self.
 
-Every top-industrialist’s family, successful lawyers, technocrats and professionals send their children to the best of residential schools. There are many who have never been to colleges but are running millions worth business with top professionals working for them. The secret is their tremendous self-confidence, decision making ability and leadership qualities.
+Go prepared for this question, as this is the most frequently asked question in the interview. Answer it covering..............
 
-A child’s overall development, education, personality development, leadership qualities and rich values and culture will be the deciding factor for real success in life. Every child is bestowed with these latent potentialities which remain suppressed due to over-protection of parental care. Every decision is taken by the parent for the child. We love our children too much and cannot afford to make any mistake by allowing children to take independent decision. This is where quality residential schools offer good multi-platform for developing his personality and leadership traits.
+2.Why do you think should we take you for this job?
 
-2. Why not good day schools?
+Don't panic if you are asked this question. Make sure that you have understood the job profile well before you go for the interview..............
 
-The best of day schools in the world have 'time' as their constraint and limitation. A child goes to school at 8 am and comes back at 3 pm. In this short span of time, the day school can only cater to academics and syllabi completion as it is so vast. Emphasis on personality development is neither planned nor possible.
+3.Why do you want to leave your present job or why did you leave your last job?
 
-3. Why not at home?
+The reasons for switching the job could be numerous. The best answer to offer for this question is to say, “for better prospects”.................
 
-No proper system is present at home to cater to personality development of the child. Our love for our children is far too much and for reasons known, we tend to be over-protective about them. In this process, we unknowingly cause more harm than help as the latent potentials get submerged. Children reciprocate to our love but value the words of teachers more than the parents. The most important period of development of the child is between the age of 8 to 18 years and this vital period after school time till bedtime has been let slightly loose and this is certainly not the correct for the child who is the most priceless asset with us.
+4.What is your greatest strength?
 
-Residential Schools adopt a “whole-life” approach to education wherein the curriculum is not only person-centered but community oriented also. The curriculum of a residential school is designed to cater to the individual needs and interests of the children keeping in mind their future welfare. Best qualities of family life are replicated in the lifestyle of the boarders and the quest for personal fulfilment is balanced by a commitment of shared endeavour, it adds dimensions of self-confidence, tolerance and maturity while imparting knowledge. Residential schools strengthen the will power of the students and help them to build a strong character. It provides them with the opportunity to understand the meaning and virtue of discipline.
+Interpret this question as, what is your greatest relevant strength? Or Why should we hire you? Tell them a strength that they want to buy..............
 
-4. What is the right age?
+5.What is your greatest weakness?
 
-Eminent psychologists like Edward Thorndike and Sigmund Frued opine that a child needs immense parental care till the age of eight as emotional stability is nurtured in the child during this stage. The qualities and emotional balance can be instilled by the parents during this age only.
+Interpret this question as, why shouldn’t we hire you? There 3 ways to tackle this question. Judge the situation and use one of them..............
 
-The right age for children to join residential schools is 9, wherein the child has developed the sense of responsibility and self-confidence and has the ability to handle testing situations. Residential School helps a child to develop into independent mature adults enabling them to adjust to all types of situations and environment later in life.
+6.What is your greatest achievement?
 
-5. Who will take care of him with 700 children here?
+The underlying agenda is to know what personal qualities were required to achieve it. Don’t go back too far.............
 
-One of the best platforms for a child’s development is to let him loose in the market of life. But, being young and innocent, he may fall prey to wrong ways. This is where a residential school which is a home away from home and the school acts as a family unit where teachers replace parental love and the child is always under controlled conditions. The 24-hour watch by teachers and house parents creates parental care. Constant monitoring and guiding towards activity-based life helps the child to realize his/her potential and caliber. Residential school aims at nurturing an environment in which children can develop self-esteem, self-confidence and development of personality while acquiring knowledge.
+7.Are you ambitious?
 
-6. Will he lose love for parents?
+You can say that I am very ambitious in the way that I don’t like to get to get a feeling of stagnancy..............
 
-Children understand the value of parental love only when they are away from them. Children at home take parents for granted as parents tend to overprotect their children and tend to pamper them. Parents at times tend to lose control in bringing about the desired controlling authority as their obligations outside the home due to their commitments being more demanding. In a hostel, the child realizes the true value of his parents thus bonding gets more strengthened.
+8.Are you speaking to some other companies? Or how is your job search going on?
 
-7. Will he become indisciplined?
+This question gives you an opportunity to let the interviewer know that other companies are also interested in hiring you and gives you.............
 
-The reason for a child being sent to a hostel is to instill in him discipline. Residential schools are best equipped to impart this mode of discipline as systems are in place 24 hours with qualified mentors/teachers. The 24X7 supervision by various faculties helps in channelising the abundant energy in the child in positive developmental activities. The system ensures proper leadership and managerial qualities boosting their self-confidence and independence tremendously.
+9.You have stayed for a long time with your last company-Why?
 
-8. What are the special features of JIRS?
+Staying with the same company for too long may be considered as the candidate being un-ambitious..............
 
-Jain International Residential School is spread over 300 acres of land. It is the commitment of JIRS to present to the young generation a world class educational centre, where the child can receive the most sophisticated education on a solid foundation of our hoary heritage.
+10.What was your biggest mistake?
 
-We are glad as to we are stepping onto the 10th year, since the school commissioned. We at JIRS ensure personal attention is given to the wards from the experienced and committed staff. Mentor scheme to monitor every child’s progress and attitudes. Creative centre to stimulate and promote creativity. Modern and Hi-tech labs to work on different experiments. Innovative teaching methods to make learning enjoyable. Excellent sports facilities for cricket, hockey, football (soccer), basketball, volleyball, tennis, badminton, swimming, gymnasium etc. Yoga and meditation to improve their concentration and memory. Other co-curricular activities, to name a few, adventure club for river rafting, parasailing, micro-lite flying etc.
-
-9. In what way is JIRS different from other schools?
-
-The School not only concentrates on the gentle unfolding of the total personality of children, it also provides academic excellence coupled with training to induce the right attitudinal change to develop in them the sense of service to others. JIRS gives lot of emphasis to our culture and practice its noble principles like service, non-violence, respect to other religions, living in harmony with nature etc.
-10. Where is the school located and how to reach?
-
-JIRS is located in Jakkasandra on Kanakapura road, which is about 45 kms. from the citadel of garden city-Bangalore in Karnataka in South India. Bangalore is well connected to the rest of the country by air, rail, and road. Regular flights, trains and bus services connect this city to other cities. For further information, visit our Directions section.
-Top
-
- 
-
-Admissions
-11. Which educational bodies is JIRS affiliated to?
-
-The school is affiliated to the CBSE, New Delhi and International General Certificate of Secondary Education (IGCSE) University of Cambridge International Examinations – United Kingdom. English is the medium of instruction.
-
-12. How well can the students cope up with CBSE or IGCSE if they are from a different board?
-
-There will not be any difficulty as ICSE and CBSE are of equal standards. This has been the experience of a large number of our students and teaching staff.
-
-13. Which are the grades for which admission can be sought?
-
-The admission will be available for Grade IV to XII
-
-14. How can I register my ward’s name for admission?
-
-Application forms can be either downloaded from the website or picked up from corporate office or school campus. Filled in application forms with registration fees and photocopy of the report card of the previous grade to be submitted for the registration.
-
-15. What are the eligibility criterions for admission into JIRS?
-
-JIRS would welcome inquiries from parents in India and Non Residential Indians. For foreign students, admissions are opened from Grade IV to Grade VII only, so that the child can adapt to the Indian School environment easily. Entrance test is mandatory so as to understand the child’s knowledge of the subjects.
-
-16. When does the academic session start at JIRS?
-
-The school will re-open on the first Monday of July every year. The academic year continues upto April in the subsequent year. There will be mid-tem vacation of about 3-4 weeks during Diwali. The academic year will conclude in the month of April.
-
-17. What is provisional admission?
-
-For all Grade XI admissions, we make provisional admission, as the results of the grade X varies from state to state. After the results are out, the admissions would be confirmed.
-
-18. What are the documents required for admission?
-
-The Application Form: Filled in Application for admission.
-Recent photographs: 24 copies of passport size colour photographs.
-Registration fee: A non-refundable demand draft payable in Bangalore or local account payee cheque in favour of Jain International Residential School.
-School Reports: Photocopies of the previous year and current year report card.
-Transfer Certificate: T.C. to be submitted for all grades. For Grade X, XI and XII admissions, T.C. to be countersigned by the concerned authority of the educational board.
-For Grade X Admission, Grade IX CBSE registration card to be submitted.
-Character Certificate: These should be addressed to the Principal recommended by the previous school authorities.
-19. Whom should I contact for further information?
-
-Corporate Office 
-Jain International Residential School, 
-91/2, Dr.A N Krishna Rao Road, V V Puram, 
-Bangalore-560004, Karnataka, India. 
-Tel: +91 80 26615246. 
-Fax: +91 80 26500895.
-20. How do I report for admission?
-
-Candidates accompanied by parents or guardians are to report on the day notified by the school. Balance fees to be cleared. All the original documents like Promotion card, transfer certificate, in case of NRI- Passports to be submitted at the administrative office. They should report with their baggage’s, with belongings mentioned as per the things to be brought.
-Top
-
- 
-
-Academics
-21. What will be the class strength in each grade?
-
-The class strength will not exceed 25 students at each level.
-
-22. What is teacher–taught ratio at JIRS?
-
-JIRS has the best and highly accomplished faculty with proven abilities, all our teaching and non-teaching staff reside at school itself. We have quarters for all our staff at campus which enables them to give more time to the children. They would plan and supervise the after-school and extra-curricular activities and look after the general needs of the students. A small class size of 25 students ensure that staff is able to focus adequate time and attention on their students.
-
-23. What is the school uniform?
-
-The school will prescribe a definite dress code to instill a sense of belonging, camaraderie among fellow students. In addition, the uniform would induce a feeling of pride and appropriateness. School will provide a set of regular uniform for daily use and an attractive formal dress for public and ceremonial occasions. These uniforms are designed for comfort, elegance and utility.
-
-24. Does the school give importance for culture and human values too?
-
-The school aims at exposing the students to various aspects of Indian culture and value system. It organises bhajans and special talks and makes students participate in spiritual activities. Only by participating and experiencing, the students can imbibe values because values are not taught but demonstrated. We have listed 75 Human Values to groom the children, wherein all the students are supposed to pick up any one value and make projects and presentation on the same.
-
-25. How a student is monitored if he is weak in particular subject(s)?
-
-Academically weak students are meticulously observed and are made to follow a well devised regimen of learning pattern that helps them to overcome their weakness and join the main stream. Every Monday, a test is conducted which monitors a child’s performance and his weaknesses. On the basis of the monitoring, suitable tutoring and remedial classes are conducted wherein personalised tutoring ensures mapping of the child’s academic progress.
-
-26. What is mentor scheme?
-
-This is a unique scheme to bring excellent rapport between teachers and students. About 7-8 students would be assigned to the care of teacher, who acts as parent, records the progress and the attitudes of his/her wards and attends to their requirements- physical, academic and emotional. They are positive counselors too.
-
-27. What kind of lab and library facilities are available at JIRS?
-
-A modern library with a large collection of useful books, systematically classified will be available. A qualified librarian would guide the children to have access to the required books. The library will have good collection of audio/video cassettes and CD’s. It will be kept open for long hours for the students to prepare for their activities like projects, symposia etc.
-
-28. Are students provided with counseling and career guidance?
-
-Apart from teachers, JIRS has the guidance of trained counselors to help students in personal, academic and career guidance. Special Counselors from IACT would give positive counseling to the students regularly. 
-
-Under JGI we have graduation ,post-graduation and engineering college, where our HOI’s give their guidance to the students at JIRS.
-
-29. Are students trained for competitive exams?
-
-Coaching for SAT exams are conducted regularly on every Sundays. Support is provided for those students who are interested in taking up IIT-JEE exams.
-30. What about the extra-curricular activities?
-
-Co-curricular activities are almost as important as academics in moulding the all round personality of the student. There is histrionics club to train students in the fields of drama, dance and music, painter’s gallery for pencil and brush enthusiasts. Hobby clubs would see them having the thrills of making variety of things with their own hands. The adventure club will offer training in trekking, Para-sailing, mountaineering, river rafting, jungle survival and boating etc. Yoga and meditation will also be regular feature of the school co-curricular programme.
-31. When are the educational tours organised?
-
-School believes that travel is the best teacher. Hence the school organises for both foreign and domestic tour. The students can opt for one of these tours. The cost of the tour is borne by the parents separately. The tours are organised usually before the mid vacation.
-32. What are the measures taken to develop the overall personality of students?
-
-Personality Development &amp; leadership classes are conducted regularly in the curriculum. Under the PDP, a camp of about 3 days is conducted, wherein training would be provided on various aspects, which would be a harmonic blend of western aggressive management and eastern aesthetics. External Professional Agency are invited to inculcate leadership qualities in students and understand the principles of Man Management.
-Top
-
- 
-
-Athletics
-33. What kind of importance is given to sports?
-
-JIRS believes in training the body as much as in training the mind. Excellent facilities are provided for both outdoor and indoor games. Under the guidance of trained personnel, students can exercise at the gym or take part in any game. The sports complex boasts of a 400 meter athletic track, 28 grounds and courts for tennis, volleyball, basketball, football, hockey, cricket and swimming pool. The Sprintoor, the indoor stadium with badminton court, bowling alley, basketball court, Sauna, Jacuzzi, Aerobic Centre, Billiards &amp; snooker, Squash court, Table Tennis. Students will be coached by professionals from international standard sports academies in-house. Talented children are given an opportunity to join Jain Academy for Sporting Excellence (JASE)-the only professional sports institute in the whole of Asia. Tailor made American Golf Course is available for the students, which is well maintained by the professionals.
-Top
-
- 
-
-Student Life
-34. What kind of accommodation facilities are available?
-
-Beautifully designed dormitories, perhaps one of the best in our country, separate for boys and girls are spacious and comfortable. Each block has a lounge and a recreation place. It will have adequate supporting staff under supervision of the House Master/Mistress. Clean and well maintained sanitary blocks with 24 hrs hot and cold water supply are designed in each block. The quality of facilities provided are of International standard.
-
-35. What are the catering facilities at JIRS?
-
-A modern and clean kitchen provides hygienic, delicious and wholesome vegetarian food under the direction of well qualified and experienced catering staff. The dining area is large, well ventilated and delightfully arranged. The menu is exhaustive and varies everyday with a wide spread in every meal which caters to the taste buds of all and also supplements the children with full nutrition. The menu is a combination of Indian, Chinese and Continental.
-
-36. Are medical and utility services available on the campus?
-
-JIRS has a 30 bedded in-house hospital within the campus with two qualified resident doctors, 4 nurses and necessary supporting staff. The clinic has an isolation unit, mini operation theatre and an Intensive Care Unit . Minor aliments will be attended to immediately and incase of emergency, JIRS is having a tie-up with the best multi-specialty hospital in Bangalore. The school also has full fledged dental unit with a qualified and experienced doctor. 
-
-JIRS campus will have arrangement for immediate necessities like tailoring, hair dressing, shoe repair etc.
-
-Top
-
- 
-
-Parents
-37. What are the regulations for parents visit to the school?
-
-JIRS welcomes parents to the campus to visit their children, with prior information. Parents can visit/take their wards out of the campus only during vacations and on holidays specially notified by the school authorities in the students-parents hand book.</string>
+There’s nothing wrong in admitting a mistake. A human being is bound to commit mistakes. This time it is advantageous..................</mutableString>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L72-O1-jvT" firstAttribute="top" secondItem="Rdl-hA-S5t" secondAttribute="bottom" constant="8" id="Ced-Fk-Vt5"/>
+                            <constraint firstItem="L72-O1-jvT" firstAttribute="top" secondItem="Rdl-hA-S5t" secondAttribute="bottom" constant="44" id="Ced-Fk-Vt5"/>
                             <constraint firstItem="L72-O1-jvT" firstAttribute="leading" secondItem="Qm0-em-wLM" secondAttribute="leading" id="GTx-nZ-pEF"/>
                             <constraint firstItem="qBW-bd-BL6" firstAttribute="top" secondItem="L72-O1-jvT" secondAttribute="bottom" constant="20" id="XfE-Y2-PdT"/>
                             <constraint firstAttribute="trailing" secondItem="L72-O1-jvT" secondAttribute="trailing" id="zTS-TV-kok"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="qJ9-PQ-GOJ"/>
                     <navigationItem key="navigationItem" title="FAQs" id="qHI-dO-8pe">
                         <barButtonItem key="leftBarButtonItem" image="menuIcon" id="GJH-iK-YcF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -488,7 +340,7 @@ JIRS welcomes parents to the campus to visit their children, with prior informat
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qB3-ca-DIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-970" y="-428"/>
+            <point key="canvasLocation" x="-158" y="-428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="paR-LE-j5p">
@@ -505,7 +357,7 @@ JIRS welcomes parents to the campus to visit their children, with prior informat
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEP-Js-OG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204" y="-652"/>
+            <point key="canvasLocation" x="608" y="-652"/>
         </scene>
         <!--Company list-->
         <scene sceneID="VYl-Ud-P1k">
@@ -614,6 +466,25 @@ JIRS welcomes parents to the campus to visit their children, with prior informat
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gft-W5-sMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-142" y="-2122"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Iq-ZO-ggD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uhn-4V-WVI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="qJ9-PQ-GOJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GA7-hS-Jle">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2nc-2Q-4Zt" kind="relationship" relationship="rootViewController" id="p5d-fe-0HP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2h-pC-aBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="-428"/>
         </scene>
     </scenes>
     <resources>
