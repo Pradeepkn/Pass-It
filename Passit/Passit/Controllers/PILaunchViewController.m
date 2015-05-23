@@ -72,6 +72,7 @@
     TestModel *model               = _companyList[indexPath.row];
     cell.companyNameLabel.text     = model.companyName;
     cell.testDescriptionLabel.text = model.testDescription;
+    [cell.companyLogo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%ld.png",(long)indexPath.row + 1]]];
     return cell;
 }
 
