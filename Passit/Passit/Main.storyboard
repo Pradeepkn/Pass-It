@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dtF-D5-PyE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dtF-D5-PyE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller-->
         <scene sceneID="1sT-WR-qyA">
             <objects>
-                <tableViewController id="hiP-lf-w9i" customClass="MenuViewController" customModule="Passit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MenuViewController" id="hiP-lf-w9i" customClass="MenuViewController" customModule="Passit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="static" style="plain" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="vTM-VO-bzU">
                         <rect key="frame" x="0.0" y="0.0" width="70" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,7 +305,7 @@
         <!--View Controller-->
         <scene sceneID="xIV-5p-Cjn">
             <objects>
-                <viewController id="5XU-bE-SYL" customClass="ViewController" customModule="Passit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchRootViewController" id="5XU-bE-SYL" customClass="ViewController" customModule="Passit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h6O-se-dFS"/>
                         <viewControllerLayoutGuide type="bottom" id="pkG-vq-jsW"/>
@@ -383,7 +383,7 @@
         <!--Login View Controller-->
         <scene sceneID="a8E-7G-29f">
             <objects>
-                <viewController id="dtF-D5-PyE" customClass="PILoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PILoginViewController" id="dtF-D5-PyE" customClass="PILoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DV4-Q7-LN5"/>
                         <viewControllerLayoutGuide type="bottom" id="2C0-mh-vXp"/>

@@ -13,6 +13,6 @@
 
 #define kIsUserLoggedIn @"isUserLoggedIn"
 
-static const NSString *PIIsUserLoggedIn @"isUserLoggedIn";
+static const NSString *PIIsUserLoggedIn = @"isUserLoggedIn";
 
 #endif

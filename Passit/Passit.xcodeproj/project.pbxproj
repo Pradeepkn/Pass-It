@@ -20,7 +20,6 @@
 		27B436751B10536C002FA227 /* AnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B436711B10536C002FA227 /* AnimationDelegate.swift */; };
 		27B436761B10536C002FA227 /* CircularRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B436721B10536C002FA227 /* CircularRevealAnimator.swift */; };
 		27B436771B10536C002FA227 /* CircularRevealTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B436731B10536C002FA227 /* CircularRevealTransitionAnimator.swift */; };
-		27B436781B10536C002FA227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B436741B10536C002FA227 /* AppDelegate.swift */; };
 		27B4367A1B105392002FA227 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B436791B105392002FA227 /* UITableViewCell.swift */; };
 		27B4367E1B1053B1002FA227 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4367B1B1053B1002FA227 /* ContentViewController.swift */; };
 		27B4367F1B1053B1002FA227 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4367C1B1053B1002FA227 /* MenuViewController.swift */; };
@@ -60,7 +59,6 @@
 		27B436711B10536C002FA227 /* AnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationDelegate.swift; sourceTree = "<group>"; };
 		27B436721B10536C002FA227 /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealAnimator.swift; sourceTree = "<group>"; };
 		27B436731B10536C002FA227 /* CircularRevealTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealTransitionAnimator.swift; sourceTree = "<group>"; };
-		27B436741B10536C002FA227 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27B436791B105392002FA227 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		27B4367B1B1053B1002FA227 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		27B4367C1B1053B1002FA227 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 				27B436711B10536C002FA227 /* AnimationDelegate.swift */,
 				27B436721B10536C002FA227 /* CircularRevealAnimator.swift */,
 				27B436731B10536C002FA227 /* CircularRevealTransitionAnimator.swift */,
-				27B436741B10536C002FA227 /* AppDelegate.swift */,
 				27B4367B1B1053B1002FA227 /* ContentViewController.swift */,
 				27B4367C1B1053B1002FA227 /* MenuViewController.swift */,
 				27B4367D1B1053B1002FA227 /* ViewController.swift */,
@@ -382,7 +379,6 @@
 				27B436601B104653002FA227 /* PIBaseViewController.m in Sources */,
 				27B436761B10536C002FA227 /* CircularRevealAnimator.swift in Sources */,
 				27B436691B1047C9002FA227 /* PILaunchViewController.m in Sources */,
-				27B436781B10536C002FA227 /* AppDelegate.swift in Sources */,
 				27B436771B10536C002FA227 /* CircularRevealTransitionAnimator.swift in Sources */,
 				27B4367A1B105392002FA227 /* UITableViewCell.swift in Sources */,
 				27B4363D1B103EC1002FA227 /* AppDelegate.m in Sources */,
