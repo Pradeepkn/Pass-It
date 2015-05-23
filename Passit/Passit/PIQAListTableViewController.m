@@ -8,6 +8,7 @@
 
 #import "PIQAListTableViewController.h"
 #import "PIQAListTableViewCell.h"
+#import "PIDataManager.h"
 
 @interface PIQAListTableViewController ()
 
@@ -37,14 +38,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [[[PIDataManager sharedInstance] questionsArray] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PIQAListTableViewCell *cell = (PIQAListTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.cellTestLabel.text = @"How are you?";
-    // Configure the cell...
-    
+    NSDictionary *currentQuestion = (NSDictionary *)[[[PIDataManager sharedInstance] questionsArray] objectAtIndex:indexPath.row];
+    cell.cellTestLabel.text = [NSString stringWithFormat:@"Q) %@", currentQuestion[@"question"]];
     return cell;
 }
 

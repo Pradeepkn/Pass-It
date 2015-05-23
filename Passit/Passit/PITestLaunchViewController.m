@@ -8,6 +8,8 @@
 
 #import "PITestLaunchViewController.h"
 #import "Constants.h"
+#import "PIQuestionsApi.h"
+#import "PIDataManager.h"
 
 @interface PITestLaunchViewController ()
 
@@ -19,6 +21,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    PIQuestionsApi *questionsApi = [PIQuestionsApi new];
+    [[APIManager sharedInstance] makeAPIRequestWithObject:questionsApi shouldAddOAuthHeader:NO andCompletionBlock:^(NSDictionary *responseDictionary, NSError *error){
+        NSDictionary *question_response = responseDictionary[@"question_response"];
+        NSString *title = question_response[@"title"];
+        self.testHeaderLabel.text = title;
+        NSArray *questionsArray = question_response[@"qustions"];
+        for (int index = 0; index < [questionsArray count] ; index++) {
+            NSDictionary *questionsDictionary = (NSDictionary *)[questionsArray objectAtIndex:index];
+            [[[PIDataManager sharedInstance] questionsArray] addObject:questionsDictionary];
+        }
+    }];
     // Do any additional setup after loading the view.
 }
 

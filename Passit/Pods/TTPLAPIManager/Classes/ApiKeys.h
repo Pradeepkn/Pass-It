@@ -13,8 +13,8 @@
 
 #pragma mark - Configuration -
 // URLs
-static NSString *const APIStaginUrl = @"";
-static NSString *const APIProductionUrl = @"";
+static NSString *const APIStaginUrl = @"http://www.mocky.io/v2";
+static NSString *const APIProductionUrl = @"http://www.mocky.io/v2";
 
 // Change the flag based on server.
 static BOOL ShouldUseProductionUrl = YES;

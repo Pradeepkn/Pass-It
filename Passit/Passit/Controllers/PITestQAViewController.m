@@ -8,8 +8,12 @@
 
 #import "PITestQAViewController.h"
 #import "PIQAListTableViewCell.h"
+#import "PIDataManager.h"
 
-@interface PITestQAViewController ()
+@interface PITestQAViewController (){
+    NSInteger currentIndex;
+    NSDictionary *currentQuestion;
+}
 @property (weak, nonatomic) IBOutlet UIButton *previousButton;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
 @property (weak, nonatomic) IBOutlet UITableView *answersTableView;
@@ -20,6 +24,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    currentQuestion = [NSDictionary new];
+    currentIndex = 0;
+    currentQuestion = (NSDictionary *)[[[PIDataManager sharedInstance] questionsArray] objectAtIndex:currentIndex];
+    self.questionTextView.text = @"";
+    self.questionTextView.text = currentQuestion[@"question"];
+    [self.answersTableView reloadData];
+    self.previousButton.enabled = NO;
     // Do any additional setup after loading the view.
 }
 
@@ -29,11 +40,45 @@
 }
 
 - (IBAction)previousButtonAction:(id)sender {
-    [self.answersTableView reloadData];
+    if (currentIndex <= 0) {
+        self.previousButton.enabled = NO;
+        return;
+    }else{
+        self.previousButton.enabled = YES;
+        currentIndex -= 1;
+    }
+    currentQuestion = (NSDictionary *)[[[PIDataManager sharedInstance] questionsArray] objectAtIndex:currentIndex];
+    self.questionTextView.text = @"";
+    self.questionTextView.text = currentQuestion[@"question"];
+    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        ;
+    } completion:^(BOOL finished) {
+        [self.answersTableView reloadData];
+    }];
 }
 
 - (IBAction)nextButtonAction:(id)sender {
-    [self.answersTableView reloadData];
+    self.previousButton.enabled = YES;
+    currentIndex += 1;
+    if (currentIndex >= [[[PIDataManager sharedInstance] questionsArray] count]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hackthlon" message:@"Thanks for your participation" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
+        return;
+    }
+    currentQuestion = (NSDictionary *)[[[PIDataManager sharedInstance] questionsArray] objectAtIndex:currentIndex];
+    self.questionTextView.text = @"";
+    self.questionTextView.text = currentQuestion[@"question"];
+    [UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        ;
+    } completion:^(BOOL finished) {
+        [self.answersTableView reloadData];
+    }];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 
 #pragma mark - Table view data source
@@ -48,9 +93,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PIQAListTableViewCell *cell = (PIQAListTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.cellTestLabel.text = @"I am fine.";
-    // Configure the cell...
-    
+    NSDictionary *answersDictionary = currentQuestion[@"answers"];
+    switch (indexPath.row) {
+        case 0:
+            cell.cellTestLabel.text = answersDictionary[@"1"];
+            break;
+        case 1:
+            cell.cellTestLabel.text = answersDictionary[@"2"];
+            break;
+        case 2:
+            cell.cellTestLabel.text = answersDictionary[@"3"];
+            break;
+        case 3:
+            cell.cellTestLabel.text = answersDictionary[@"4"];
+            break;
+        default:
+            break;
+    }
     return cell;
 }
 
