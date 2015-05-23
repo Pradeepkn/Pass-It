@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="16dp"
+        android:textColor="#FF0000"
+        android:id="@+id/timer"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.passit.ui.widget.ZaarkViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_above="@+id/bottom_view"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/prev_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:minHeight="48dp"
+                android:layout_weight="1"
+                android:text="Prev"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:minHeight="48dp"
+                android:layout_weight="1"
+                android:text="Next"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
