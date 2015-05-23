@@ -70,6 +70,7 @@
     if (currentIndex >= [[[PIDataManager sharedInstance] questionsArray] count]) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hackthlon" message:@"Thanks for your participation" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alertView show];
+        [timer invalidate];
         return;
     }
     currentQuestion = (NSDictionary *)[[[PIDataManager sharedInstance] questionsArray] objectAtIndex:currentIndex];
