@@ -97,9 +97,9 @@
                     <connections>
                         <segue destination="HD5-8L-cO0" kind="relationship" relationship="viewControllers" id="O1H-Mv-2TJ"/>
                         <segue destination="brQ-Rh-PYA" kind="relationship" relationship="viewControllers" id="O4o-D1-bf9"/>
-                        <segue destination="nuf-p1-Llz" kind="relationship" relationship="viewControllers" id="1n5-pz-EI2"/>
                         <segue destination="3nP-m4-fOR" kind="relationship" relationship="viewControllers" id="i23-Ur-0KQ"/>
                         <segue destination="uhn-4V-WVI" kind="relationship" relationship="viewControllers" id="CaV-Rt-HQb"/>
+                        <segue destination="J61-8w-Y7o" kind="relationship" relationship="viewControllers" id="yOv-NZ-STA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7w-ch-N3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,50 +132,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRe-lc-9UA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="-2062"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="VWm-vp-SzD">
-            <objects>
-                <tableViewController id="smh-QK-mD9" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uUl-mh-Cxg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aAq-MN-hlv">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aAq-MN-hlv" id="dC2-xN-JEg">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="smh-QK-mD9" id="WTp-oH-VmU"/>
-                            <outlet property="delegate" destination="smh-QK-mD9" id="i0P-mw-IhH"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Profile" id="4cC-B3-R6r"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hQO-aV-a0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="702" y="-1398"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="8K8-gP-MD0">
-            <objects>
-                <navigationController id="nuf-p1-Llz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="ZCJ-1d-vTW"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z7d-AL-fIa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="smh-QK-mD9" kind="relationship" relationship="rootViewController" id="NtG-JF-W4q"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jhx-DI-RNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-118" y="-1398"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Cn3-Ha-GTM">
@@ -261,7 +217,7 @@
         <!--FAQs-->
         <scene sceneID="egr-EK-vf6">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="2nc-2Q-4Zt" customClass="FaqsViewController" sceneMemberID="viewController">
+                <viewController id="2nc-2Q-4Zt" customClass="FaqsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rdl-hA-S5t"/>
                         <viewControllerLayoutGuide type="bottom" id="qBW-bd-BL6"/>
@@ -271,7 +227,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L72-O1-jvT">
-                                <rect key="frame" x="0.0" y="108" width="600" height="423"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="467"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <mutableString key="text">1. Tell me something about your self.
 
@@ -318,7 +274,7 @@ There’s nothing wrong in admitting a mistake. A human being is bound to commit
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="L72-O1-jvT" firstAttribute="top" secondItem="Rdl-hA-S5t" secondAttribute="bottom" constant="44" id="Ced-Fk-Vt5"/>
+                            <constraint firstItem="L72-O1-jvT" firstAttribute="top" secondItem="Rdl-hA-S5t" secondAttribute="bottom" id="Ced-Fk-Vt5"/>
                             <constraint firstItem="L72-O1-jvT" firstAttribute="leading" secondItem="Qm0-em-wLM" secondAttribute="leading" id="GTx-nZ-pEF"/>
                             <constraint firstItem="qBW-bd-BL6" firstAttribute="top" secondItem="L72-O1-jvT" secondAttribute="bottom" constant="20" id="XfE-Y2-PdT"/>
                             <constraint firstAttribute="trailing" secondItem="L72-O1-jvT" secondAttribute="trailing" id="zTS-TV-kok"/>
@@ -468,6 +424,36 @@ There’s nothing wrong in admitting a mistake. A human being is bound to commit
             </objects>
             <point key="canvasLocation" x="-142" y="-2122"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="IgI-YK-cIk">
+            <objects>
+                <viewController id="3f3-mA-eqg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OtR-Ab-bBz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Erc-HZ-5Z3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EqW-1h-neo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1211" translatesAutoresizingMaskIntoConstraints="NO" id="SEM-e5-czr">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SEM-e5-czr" secondAttribute="bottom" id="8bf-N3-oM4"/>
+                            <constraint firstItem="SEM-e5-czr" firstAttribute="top" secondItem="EqW-1h-neo" secondAttribute="top" constant="64" id="JND-ud-4ap"/>
+                            <constraint firstAttribute="trailing" secondItem="SEM-e5-czr" secondAttribute="trailing" id="VHJ-HU-Cuu"/>
+                            <constraint firstItem="SEM-e5-czr" firstAttribute="leading" secondItem="EqW-1h-neo" secondAttribute="leading" id="hSn-f6-cfQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="qLC-Qn-Tlk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBB-hG-5lx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="-1380"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Iq-ZO-ggD">
             <objects>
@@ -487,8 +473,32 @@ There’s nothing wrong in admitting a mistake. A human being is bound to commit
             </objects>
             <point key="canvasLocation" x="-970" y="-428"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G0v-Fv-8Kh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J61-8w-Y7o" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="3Eo-Oa-qgd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fzu-Ev-9zD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                            <color key="textColor" red="0.50588235290000005" green="0.043137254899999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3f3-mA-eqg" kind="relationship" relationship="rootViewController" id="piH-e8-CTg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POs-QX-IRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-1380"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="IMG_1211" width="1242" height="2208"/>
         <image name="Logo-Placeholder" width="250" height="150"/>
         <image name="logout" width="200" height="125"/>
         <image name="menuIcon" width="200" height="125"/>
