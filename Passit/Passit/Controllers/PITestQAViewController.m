@@ -121,8 +121,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.answersTableView reloadData];
-
+    
 //    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
