@@ -31,17 +31,17 @@
     _companyList = [NSMutableArray new];
     
     {
-        TestModel *model = [[TestModel alloc]initWithCompanyID:@1 companyName:@"ThoughtWorks" testDescription:@"Hackathon pre screening for mobile devs"];
+        TestModel *model = [[TestModel alloc]initWithCompanyID:@1 companyName:@"Volkswagon" testDescription:@"Hackathon pre screening for mobile devs"];
         [_companyList addObject:model];
     }
     
     {
-        TestModel *model = [[TestModel alloc]initWithCompanyID:@2 companyName:@"Amazon" testDescription:@"Amazon pre screening for SSE"];
+        TestModel *model = [[TestModel alloc]initWithCompanyID:@2 companyName:@"Dell" testDescription:@"Dell inspiring you"];
         [_companyList addObject:model];
     }
     
     {
-        TestModel *model = [[TestModel alloc]initWithCompanyID:@3 companyName:@"Snapdeal" testDescription:@"ObjectiveC, Swift"];
+        TestModel *model = [[TestModel alloc]initWithCompanyID:@3 companyName:@"Intel" testDescription:@"The future is here. ObjectiveC, Swift"];
         [_companyList addObject:model];
     }
     [self.tableView reloadData];
