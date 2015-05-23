@@ -20,4 +20,7 @@ static NSString *StoryboardNameMain     = @"Main";
 static NSString *StoryboardIDLoginVC    = @"LoginViewController";
 static NSString *StoryboardIDLaunchVC   = @"LaunchViewController";
 
+static NSString *kQAViewSegue           = @"QASegue";
+static NSString *kQAListViewSegue           = @"QAListSegue";
+
 #endif

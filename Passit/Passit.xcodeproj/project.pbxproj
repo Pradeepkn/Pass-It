@@ -25,6 +25,11 @@
 		27B4367F1B1053B1002FA227 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4367C1B1053B1002FA227 /* MenuViewController.swift */; };
 		27B436801B1053B1002FA227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B4367D1B1053B1002FA227 /* ViewController.swift */; };
 		27B436851B105657002FA227 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B436841B105657002FA227 /* ContentType.swift */; };
+		27B436901B106298002FA227 /* PITestLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B4368F1B106298002FA227 /* PITestLaunchViewController.m */; };
+		27B436971B106421002FA227 /* PITestQAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B436961B106421002FA227 /* PITestQAViewController.m */; };
+		27B436991B106B2D002FA227 /* QAStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B436981B106B2D002FA227 /* QAStoryboard.storyboard */; };
+		27B4369C1B107316002FA227 /* PIQAListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B4369B1B107316002FA227 /* PIQAListTableViewController.m */; };
+		27B4369F1B1073A0002FA227 /* PIQAListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B4369E1B1073A0002FA227 /* PIQAListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,16 @@
 		27B436821B10540E002FA227 /* Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
 		27B436831B10551A002FA227 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		27B436841B105657002FA227 /* ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		27B4368E1B106298002FA227 /* PITestLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PITestLaunchViewController.h; sourceTree = "<group>"; };
+		27B4368F1B106298002FA227 /* PITestLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PITestLaunchViewController.m; sourceTree = "<group>"; };
+		27B436911B1062A4002FA227 /* PILocalizationKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PILocalizationKey.h; sourceTree = "<group>"; };
+		27B436951B106421002FA227 /* PITestQAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PITestQAViewController.h; path = Controllers/PITestQAViewController.h; sourceTree = "<group>"; };
+		27B436961B106421002FA227 /* PITestQAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PITestQAViewController.m; path = Controllers/PITestQAViewController.m; sourceTree = "<group>"; };
+		27B436981B106B2D002FA227 /* QAStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QAStoryboard.storyboard; sourceTree = "<group>"; };
+		27B4369A1B107316002FA227 /* PIQAListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIQAListTableViewController.h; sourceTree = "<group>"; };
+		27B4369B1B107316002FA227 /* PIQAListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIQAListTableViewController.m; sourceTree = "<group>"; };
+		27B4369D1B1073A0002FA227 /* PIQAListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PIQAListTableViewCell.h; path = Controllers/PIQAListTableViewCell.h; sourceTree = "<group>"; };
+		27B4369E1B1073A0002FA227 /* PIQAListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PIQAListTableViewCell.m; path = Controllers/PIQAListTableViewCell.m; sourceTree = "<group>"; };
 		4790FFAC55575A64124D5141 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4FA3942760856A1E018476DE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		842E15355BA61A002E6E86B1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +138,7 @@
 				27B4363C1B103EC1002FA227 /* AppDelegate.m */,
 				27B4366D1B105253002FA227 /* Main.storyboard */,
 				27B436461B103EC1002FA227 /* LaunchScreen.xib */,
+				27B436981B106B2D002FA227 /* QAStoryboard.storyboard */,
 				27B436371B103EC1002FA227 /* Supporting Files */,
 			);
 			path = Passit;
@@ -158,6 +174,9 @@
 		27B436611B10465A002FA227 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				27B436941B106400002FA227 /* TestQAScreen */,
+				27B436921B1062DD002FA227 /* LocalisationHeader */,
+				27B436931B1062E9002FA227 /* TestLaunchScreen */,
 				27B436621B104670002FA227 /* BaseViewController */,
 				27B436661B104690002FA227 /* LoginController */,
 				27B4366A1B1047E4002FA227 /* LaunchViewController */,
@@ -206,6 +225,36 @@
 				27B436701B10536C002FA227 /* Passit-Bridging-Header.h */,
 			);
 			name = Misc;
+			sourceTree = "<group>";
+		};
+		27B436921B1062DD002FA227 /* LocalisationHeader */ = {
+			isa = PBXGroup;
+			children = (
+				27B436911B1062A4002FA227 /* PILocalizationKey.h */,
+			);
+			name = LocalisationHeader;
+			sourceTree = "<group>";
+		};
+		27B436931B1062E9002FA227 /* TestLaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				27B4368E1B106298002FA227 /* PITestLaunchViewController.h */,
+				27B4368F1B106298002FA227 /* PITestLaunchViewController.m */,
+				27B4369A1B107316002FA227 /* PIQAListTableViewController.h */,
+				27B4369B1B107316002FA227 /* PIQAListTableViewController.m */,
+				27B4369D1B1073A0002FA227 /* PIQAListTableViewCell.h */,
+				27B4369E1B1073A0002FA227 /* PIQAListTableViewCell.m */,
+			);
+			name = TestLaunchScreen;
+			sourceTree = "<group>";
+		};
+		27B436941B106400002FA227 /* TestQAScreen */ = {
+			isa = PBXGroup;
+			children = (
+				27B436951B106421002FA227 /* PITestQAViewController.h */,
+				27B436961B106421002FA227 /* PITestQAViewController.m */,
+			);
+			name = TestQAScreen;
 			sourceTree = "<group>";
 		};
 		575649D93C29EDD8FCB578D7 /* Frameworks */ = {
@@ -309,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27B4366E1B105253002FA227 /* Main.storyboard in Resources */,
+				27B436991B106B2D002FA227 /* QAStoryboard.storyboard in Resources */,
 				27B4366C1B105232002FA227 /* Images.xcassets in Resources */,
 				27B436481B103EC1002FA227 /* LaunchScreen.xib in Resources */,
 			);
@@ -376,15 +426,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27B436901B106298002FA227 /* PITestLaunchViewController.m in Sources */,
 				27B436601B104653002FA227 /* PIBaseViewController.m in Sources */,
 				27B436761B10536C002FA227 /* CircularRevealAnimator.swift in Sources */,
 				27B436691B1047C9002FA227 /* PILaunchViewController.m in Sources */,
 				27B436771B10536C002FA227 /* CircularRevealTransitionAnimator.swift in Sources */,
 				27B4367A1B105392002FA227 /* UITableViewCell.swift in Sources */,
+				27B4369C1B107316002FA227 /* PIQAListTableViewController.m in Sources */,
 				27B4363D1B103EC1002FA227 /* AppDelegate.m in Sources */,
 				27B4367F1B1053B1002FA227 /* MenuViewController.swift in Sources */,
 				27B436801B1053B1002FA227 /* ViewController.swift in Sources */,
 				27B4363A1B103EC1002FA227 /* main.m in Sources */,
+				27B436971B106421002FA227 /* PITestQAViewController.m in Sources */,
+				27B4369F1B1073A0002FA227 /* PIQAListTableViewCell.m in Sources */,
 				27B4367E1B1053B1002FA227 /* ContentViewController.swift in Sources */,
 				27B436851B105657002FA227 /* ContentType.swift in Sources */,
 				27B436651B10468A002FA227 /* PILoginViewController.m in Sources */,

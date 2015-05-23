@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PILoginViewController.h"
 #import "PILaunchViewController.h"
+#import "PITestLaunchViewController.h"
 
 @interface AppDelegate () <PILoginDelegate>
 {
@@ -23,7 +24,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self showInitialScreen];
+//    [self showInitialScreen];
+
+    UIStoryboard *chatStoryboard = [UIStoryboard storyboardWithName:@"QAStoryboard" bundle:nil];
+    PITestLaunchViewController *testLaunchViewController = (PITestLaunchViewController*)[chatStoryboard instantiateInitialViewController];
+    self.window.rootViewController = testLaunchViewController;
     return YES;
 }
 
