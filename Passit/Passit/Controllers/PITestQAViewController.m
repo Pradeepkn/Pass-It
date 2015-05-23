@@ -13,17 +13,22 @@
 @interface PITestQAViewController (){
     NSInteger currentIndex;
     NSDictionary *currentQuestion;
+    NSTimer *timer;
+    NSInteger elapsedSeconds;
 }
 @property (weak, nonatomic) IBOutlet UIButton *previousButton;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
 @property (weak, nonatomic) IBOutlet UITableView *answersTableView;
 @property (weak, nonatomic) IBOutlet UITextView *questionTextView;
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+
 @end
 
 @implementation PITestQAViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    elapsedSeconds = 0;
     currentQuestion = [NSDictionary new];
     currentIndex = 0;
     currentQuestion = (NSDictionary *)[[[PIDataManager sharedInstance] questionsArray] objectAtIndex:currentIndex];
@@ -31,6 +36,8 @@
     self.questionTextView.text = currentQuestion[@"question"];
     [self.answersTableView reloadData];
     self.previousButton.enabled = NO;
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
     // Do any additional setup after loading the view.
 }
 
@@ -117,6 +124,22 @@
     [self.answersTableView reloadData];
 
 //    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (void)updateTimer {
+    self.timerLabel.text = [self timeString];
+    elapsedSeconds++;
+}
+
+- (NSString*)timeString {
+    NSInteger min = elapsedSeconds/60;
+    NSInteger seconds = elapsedSeconds - (min*60);
+    return [NSString stringWithFormat:@"%02ld:%02ld",(long)min,(long)seconds];
+}
+
+- (void)dealloc {
+    [timer invalidate];
+    timer = nil;
 }
 
 /*
