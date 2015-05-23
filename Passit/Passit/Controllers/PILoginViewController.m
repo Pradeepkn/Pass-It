@@ -34,6 +34,7 @@ static  NSString* dummypassword = @"qwerty";
 //    if ([self.usernameTextField.text isEqualToString:dummyusername] &&
 //        [self.passwordTextField.text isEqualToString:dummypassword]) {
         if ([self.delegate respondsToSelector:@selector(loginDidSuccess)]) {
+            [[NSUserDefaults standardUserDefaults]setBool:YES forKey:PIIsUserLoggedIn];
             [self.delegate loginDidSuccess];
         }
 //    }

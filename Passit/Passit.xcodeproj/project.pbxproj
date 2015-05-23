@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1143E3231B10892100642913 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143E3221B10892100642913 /* TestModel.m */; };
+		1143E3261B108AB200642913 /* PITestListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143E3251B108AB200642913 /* PITestListCell.m */; };
+		1143E32A1B10940200642913 /* PISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1143E3291B10940200642913 /* PISettingsViewController.m */; };
 		22C0220F9BC3A5B732A6432E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842E15355BA61A002E6E86B1 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		27B4363A1B103EC1002FA227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B436391B103EC1002FA227 /* main.m */; };
 		27B4363D1B103EC1002FA227 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B4363C1B103EC1002FA227 /* AppDelegate.m */; };
@@ -46,6 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1143E3211B10892100642913 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestModel.h; path = Controllers/TestModel.h; sourceTree = "<group>"; };
+		1143E3221B10892100642913 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestModel.m; path = Controllers/TestModel.m; sourceTree = "<group>"; };
+		1143E3241B108AB200642913 /* PITestListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PITestListCell.h; path = Views/PITestListCell.h; sourceTree = "<group>"; };
+		1143E3251B108AB200642913 /* PITestListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PITestListCell.m; path = Views/PITestListCell.m; sourceTree = "<group>"; };
+		1143E3281B10940200642913 /* PISettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PISettingsViewController.h; path = Controllers/PISettingsViewController.h; sourceTree = "<group>"; };
+		1143E3291B10940200642913 /* PISettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PISettingsViewController.m; path = Controllers/PISettingsViewController.m; sourceTree = "<group>"; };
 		27B436341B103EC1002FA227 /* Passit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B436381B103EC1002FA227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27B436391B103EC1002FA227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1143E3271B108ABA00642913 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1143E3241B108AB200642913 /* PITestListCell.h */,
+				1143E3251B108AB200642913 /* PITestListCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		27B4362B1B103EC1002FA227 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +208,9 @@
 				27B436661B104690002FA227 /* LoginController */,
 				27B4366A1B1047E4002FA227 /* LaunchViewController */,
 				27B436A91B1085E0002FA227 /* ModelClass */,
+				1143E3271B108ABA00642913 /* Views */,
+				1143E3281B10940200642913 /* PISettingsViewController.h */,
+				1143E3291B10940200642913 /* PISettingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -276,6 +297,8 @@
 				27B436AB1B1085FA002FA227 /* QuestionModel.m */,
 				27B436AD1B1087F7002FA227 /* PIQuestionsApi.h */,
 				27B436AE1B1087F7002FA227 /* PIQuestionsApi.m */,
+				1143E3211B10892100642913 /* TestModel.h */,
+				1143E3221B10892100642913 /* TestModel.m */,
 			);
 			name = ModelClass;
 			sourceTree = "<group>";
@@ -451,6 +474,7 @@
 			files = (
 				27B436901B106298002FA227 /* PITestLaunchViewController.m in Sources */,
 				27B436601B104653002FA227 /* PIBaseViewController.m in Sources */,
+				1143E32A1B10940200642913 /* PISettingsViewController.m in Sources */,
 				27B436761B10536C002FA227 /* CircularRevealAnimator.swift in Sources */,
 				27B436691B1047C9002FA227 /* PILaunchViewController.m in Sources */,
 				27B436771B10536C002FA227 /* CircularRevealTransitionAnimator.swift in Sources */,
@@ -459,8 +483,10 @@
 				27B4363D1B103EC1002FA227 /* AppDelegate.m in Sources */,
 				27B436A81B108528002FA227 /* PIDataManager.m in Sources */,
 				27B4367F1B1053B1002FA227 /* MenuViewController.swift in Sources */,
+				1143E3261B108AB200642913 /* PITestListCell.m in Sources */,
 				27B436801B1053B1002FA227 /* ViewController.swift in Sources */,
 				27B4363A1B103EC1002FA227 /* main.m in Sources */,
+				1143E3231B10892100642913 /* TestModel.m in Sources */,
 				27B436971B106421002FA227 /* PITestQAViewController.m in Sources */,
 				27B436AF1B1087F7002FA227 /* PIQuestionsApi.m in Sources */,
 				27B4369F1B1073A0002FA227 /* PIQAListTableViewCell.m in Sources */,
