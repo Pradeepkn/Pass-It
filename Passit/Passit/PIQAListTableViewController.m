@@ -44,7 +44,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PIQAListTableViewCell *cell = (PIQAListTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     NSDictionary *currentQuestion = (NSDictionary *)[[[PIDataManager sharedInstance] questionsArray] objectAtIndex:indexPath.row];
-    cell.cellTestLabel.text = [NSString stringWithFormat:@"Q) %@", currentQuestion[@"question"]];
+    cell.cellTestLabel.text = [NSString stringWithFormat:@"Q%ld) %@",(long)indexPath.row, currentQuestion[@"question"]];
     return cell;
 }
 

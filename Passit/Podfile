@@ -5,3 +5,6 @@ use_frameworks!
 pod 'YALSideMenu'
 #TTPL API manager
 pod 'TTPLAPIManager', :git => 'https://github.com/iosttpl/TTPLAPIManager.git'
+
+# Keyboard avoiding for autolayout
+pod 'IQKeyboardManager'

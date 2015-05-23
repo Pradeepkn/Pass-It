@@ -41,6 +41,11 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [timer invalidate];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

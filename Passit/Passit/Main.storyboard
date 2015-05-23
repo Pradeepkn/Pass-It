@@ -26,6 +26,15 @@
                                 <color key="textColor" red="0.72019018310000005" green="0.061214230539999998" blue="0.31410165600000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="mobile number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-ho-HXm">
+                                <rect key="frame" x="185" y="127" width="230" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="CWk-jf-eiR"/>
+                                    <constraint firstAttribute="height" constant="30" id="GQk-n9-6R5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92D-LK-7tX">
                                 <rect key="frame" x="185" y="177" width="230" height="30"/>
                                 <constraints>
@@ -50,15 +59,6 @@
                                     <action selector="didPressLoginButton:" destination="dtF-D5-PyE" eventType="touchUpInside" id="gEA-CG-2JU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="mobile number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-ho-HXm">
-                                <rect key="frame" x="185" y="127" width="230" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="CWk-jf-eiR"/>
-                                    <constraint firstAttribute="height" constant="30" id="GQk-n9-6R5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

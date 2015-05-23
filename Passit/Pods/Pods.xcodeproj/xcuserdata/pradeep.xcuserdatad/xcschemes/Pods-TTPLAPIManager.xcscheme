@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA4EF34E84617743879E29A2"
+               BlueprintIdentifier = "6A0A3CF2031398A68883E250"
                BuildableName = "TTPLAPIManager.framework"
                BlueprintName = "Pods-TTPLAPIManager"
                ReferencedContainer = "container:Pods.xcodeproj">

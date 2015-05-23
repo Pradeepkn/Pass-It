@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - IQKeyboardManager (3.2.3)
   - TTPLAPIManager (0.1.0):
     - AFNetworking (~> 2.4)
     - XMLDictionary (~> 1.4)
@@ -27,6 +28,7 @@ PODS:
   - YALSideMenu (1.0)
 
 DEPENDENCIES:
+  - IQKeyboardManager
   - TTPLAPIManager (from `https://github.com/iosttpl/TTPLAPIManager.git`)
   - YALSideMenu
 
@@ -41,6 +43,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  IQKeyboardManager: 6ca5c54e3776eb54af4c7caf515833f3cd761d59
   TTPLAPIManager: f1c2f1f196d07c20a901c35d5d27e2d57d2b2e41
   XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
   YALSideMenu: 87fd2d758bf0afefd034d7d1b7c87af7005a59ee

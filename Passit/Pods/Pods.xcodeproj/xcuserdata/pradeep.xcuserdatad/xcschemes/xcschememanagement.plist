@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TTPLAPIManager-TTPLAPIManager.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>17A1E02E39226E064D32670C</key>
+		<key>6A0A3CF2031398A68883E250</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EA46AF767E62B13F55584B9</key>
+		<key>7F1D607775DC2F297D66AB42</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B3B417DE3A11CC1845340B1E</key>
+		<key>86920534021F1FE332406FD1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA4EF34E84617743879E29A2</key>
+		<key>8C1739A3B2F63E3954600951</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E57FD671E43731F517C849AA</key>
+		<key>B9E66EF7D77E713D54FE2ECD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F1E245A21A3E433FFAF28157</key>
+		<key>BDE0346A4738F402384A4F57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3CA419F920BF20497E7845C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
