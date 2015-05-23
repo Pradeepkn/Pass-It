@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "204F44AF2C4261B7C4CE5BA6"
+               BlueprintIdentifier = "B3B417DE3A11CC1845340B1E"
                BuildableName = "SideMenu.framework"
                BlueprintName = "Pods-YALSideMenu"
                ReferencedContainer = "container:Pods.xcodeproj">

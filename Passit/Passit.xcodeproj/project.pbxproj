@@ -32,6 +32,7 @@
 		27B4369F1B1073A0002FA227 /* PIQAListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B4369E1B1073A0002FA227 /* PIQAListTableViewCell.m */; };
 		27B436A81B108528002FA227 /* PIDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B436A71B108528002FA227 /* PIDataManager.m */; };
 		27B436AC1B1085FA002FA227 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B436AB1B1085FA002FA227 /* QuestionModel.m */; };
+		27B436AF1B1087F7002FA227 /* PIQuestionsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B436AE1B1087F7002FA227 /* PIQuestionsApi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		27B436A71B108528002FA227 /* PIDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PIDataManager.m; path = Controllers/PIDataManager.m; sourceTree = "<group>"; };
 		27B436AA1B1085FA002FA227 /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionModel.h; path = Controllers/QuestionModel.h; sourceTree = "<group>"; };
 		27B436AB1B1085FA002FA227 /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionModel.m; path = Controllers/QuestionModel.m; sourceTree = "<group>"; };
+		27B436AD1B1087F7002FA227 /* PIQuestionsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIQuestionsApi.h; sourceTree = "<group>"; };
+		27B436AE1B1087F7002FA227 /* PIQuestionsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIQuestionsApi.m; sourceTree = "<group>"; };
 		4790FFAC55575A64124D5141 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4FA3942760856A1E018476DE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		842E15355BA61A002E6E86B1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +274,8 @@
 				27B436A71B108528002FA227 /* PIDataManager.m */,
 				27B436AA1B1085FA002FA227 /* QuestionModel.h */,
 				27B436AB1B1085FA002FA227 /* QuestionModel.m */,
+				27B436AD1B1087F7002FA227 /* PIQuestionsApi.h */,
+				27B436AE1B1087F7002FA227 /* PIQuestionsApi.m */,
 			);
 			name = ModelClass;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				27B436801B1053B1002FA227 /* ViewController.swift in Sources */,
 				27B4363A1B103EC1002FA227 /* main.m in Sources */,
 				27B436971B106421002FA227 /* PITestQAViewController.m in Sources */,
+				27B436AF1B1087F7002FA227 /* PIQuestionsApi.m in Sources */,
 				27B4369F1B1073A0002FA227 /* PIQAListTableViewCell.m in Sources */,
 				27B4367E1B1053B1002FA227 /* ContentViewController.swift in Sources */,
 				27B436851B105657002FA227 /* ContentType.swift in Sources */,

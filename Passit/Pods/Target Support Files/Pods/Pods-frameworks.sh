@@ -48,8 +48,14 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'AFNetworking.framework'
+  install_framework 'TTPLAPIManager.framework'
+  install_framework 'XMLDictionary.framework'
   install_framework 'SideMenu.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'AFNetworking.framework'
+  install_framework 'TTPLAPIManager.framework'
+  install_framework 'XMLDictionary.framework'
   install_framework 'SideMenu.framework'
 fi

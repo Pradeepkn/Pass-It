@@ -1,0 +1,6 @@
+framework module TTPLAPIManager {
+  umbrella header "Pods-TTPLAPIManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
