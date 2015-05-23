@@ -129,6 +129,13 @@
 - (void)updateTimer {
     self.timerLabel.text = [self timeString];
     elapsedSeconds++;
+    if (elapsedSeconds > 30) {
+        [timer invalidate];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hackthlon" message:@"Time is Up!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alertView show];
+        [timer invalidate];
+        return;
+    }
 }
 
 - (NSString*)timeString {
