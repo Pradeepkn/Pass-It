@@ -86,4 +86,9 @@
     [self showLaunchScreen];
 }
 
+- (void)logout {
+    [[NSUserDefaults standardUserDefaults]setBool:NO forKey:kIsUserLoggedIn];
+    [self showLoginScreen];
+}
+
 @end
