@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SoL-bC-edZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Test Launch View Controller-->
@@ -239,17 +240,29 @@ Let’s begin…</string>
                                     <outlet property="delegate" destination="tBQ-pB-cZx" id="cBf-z0-I9u"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xl-Po-I93">
+                                <rect key="frame" x="16" y="522" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9i7-QI-Y6P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="8ZM-9J-Qso" secondAttribute="trailing" id="BUb-hn-YiV"/>
                             <constraint firstItem="c5O-tX-Wlm" firstAttribute="leading" secondItem="hzr-m1-cmo" secondAttribute="leading" id="BsR-Td-TXh"/>
+                            <constraint firstItem="RzG-Hm-VmQ" firstAttribute="top" secondItem="5Xl-Po-I93" secondAttribute="bottom" constant="8" id="D9g-XK-04J"/>
                             <constraint firstItem="RzG-Hm-VmQ" firstAttribute="leading" secondItem="hzr-m1-cmo" secondAttribute="leading" id="HQ7-gT-i8c"/>
+                            <constraint firstItem="5Xl-Po-I93" firstAttribute="leading" secondItem="hzr-m1-cmo" secondAttribute="leadingMargin" id="K4G-9O-thx"/>
                             <constraint firstItem="8ZM-9J-Qso" firstAttribute="leading" secondItem="hzr-m1-cmo" secondAttribute="leading" id="OJH-32-Vg9"/>
                             <constraint firstAttribute="trailing" secondItem="c5O-tX-Wlm" secondAttribute="trailing" id="k5X-Q0-FWQ"/>
                             <constraint firstItem="8ZM-9J-Qso" firstAttribute="top" secondItem="hzr-m1-cmo" secondAttribute="top" constant="64" id="kj5-b3-FMX"/>
                             <constraint firstItem="c5O-tX-Wlm" firstAttribute="top" secondItem="8ZM-9J-Qso" secondAttribute="bottom" id="ph2-1O-zQR"/>
                             <constraint firstAttribute="trailing" secondItem="RzG-Hm-VmQ" secondAttribute="trailing" id="qo5-gz-C4j"/>
+                            <constraint firstItem="5Xl-Po-I93" firstAttribute="trailing" secondItem="hzr-m1-cmo" secondAttribute="trailingMargin" id="vED-If-qKp"/>
                             <constraint firstItem="OtC-s9-HpV" firstAttribute="top" secondItem="RzG-Hm-VmQ" secondAttribute="bottom" id="w7C-f7-b83"/>
                         </constraints>
                     </view>
@@ -259,6 +272,7 @@ Let’s begin…</string>
                         <outlet property="nextButton" destination="udt-Cx-fPA" id="6UD-34-VFu"/>
                         <outlet property="previousButton" destination="NG7-62-Pi1" id="AF5-hb-ToU"/>
                         <outlet property="questionTextView" destination="8c2-Cy-4C6" id="5Dm-rv-OQx"/>
+                        <outlet property="timerLabel" destination="5Xl-Po-I93" id="ZFC-Fk-fsv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3i-bP-RHO" userLabel="First Responder" sceneMemberID="firstResponder"/>
